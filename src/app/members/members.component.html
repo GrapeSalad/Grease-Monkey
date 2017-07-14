@@ -16,8 +16,8 @@
       <p (click)="goToDetailPage(member)" class="clickable">{{member.name}} | {{member.title}}</p>
     </div>
     <div *ngIf="currentRoute === '/admin'">
-      <hr>
       <app-edit-member [selectedMember]="member"></app-edit-member>
+      <hr>
     </div>
   </div>
 </div>

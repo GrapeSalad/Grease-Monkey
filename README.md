@@ -12,15 +12,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | list members | X |
 | click member to see details | X |
 | filter members | X |
-| ADMIN: add new members |  |
-| ADMIN: edit members |  |
-| ADMIN: delete members |  |
-| list all bikes in members page |  |
+| ADMIN: add new members | X |
+| ADMIN: edit members | X |
+| ADMIN: delete members | X |
+| list all bikes in member-detail page | X |
 | MEMBER: add new bike |  |
 | MEMBER: edit bikes |  |
 | MEMBER: delete bike |  |
 | deployment |  |
 |---|---|
+
+## Wishlist
+
++ Show all bikes in member detail page
 
 ## Development server
 

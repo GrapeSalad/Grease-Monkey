@@ -2,10 +2,13 @@
   <h4>{{memberToDisplay?.title}}</h4>
   <p>{{memberToDisplay?.name}}</p>
   <p>Bikes:</p>
-  <!-- <ul *ngFor="let bike of bikes">
-    <li>{{member.bikes.make}}</li>
-    <li>{{member.bikes.model}}</li>
-    <li>{{member.bikes.displacement}}</li>
-    <li>{{member.bikes.year}}</li>
-  </ul> -->
+  <ol>
+    <li>{{memberToDisplay?.bikes.make}} | {{memberToDisplay?.bikes.model}}
+      <ul>
+        <li>Engine: {{memberToDisplay?.bikes.displacement}}</li>
+        <li>Year: {{memberToDisplay?.bikes.year}}</li>
+      </ul>
+    </li>
+  </ol>
 </div>
+ <!-- *ngFor="let bike of bikes" -->
