@@ -1,3 +1,14 @@
-<p>
-  members works!
-</p>
+<div class="body">
+  <h4>Current Members</h4>
+  <div class="panel panel-default" *ngFor="let member of members | async">
+    <div class="panel-body">
+      <p (click)="goToDetailPage(member)" class="clickable">{{member.name}} | {{member.title}}</p>
+      <!-- <ul *ngFor="let bike of bikes">
+        <li>{{member.bikes.make}}</li>
+        <li>{{member.bikes.model}}</li>
+        <li>{{member.bikes.displacement}}</li>
+        <li>{{member.bikes.year}}</li>
+      </ul> -->
+    </div>
+  </div>
+</div>
