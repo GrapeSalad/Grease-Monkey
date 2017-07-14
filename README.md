@@ -2,6 +2,26 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Specs
+
+| Spec | Completed? |
+|---|---|
+| home page | X |
+| about page | X |
+| list members | X |
+| click member to see details |  |
+| persistent data | X |
+| filter members |  |
+| ADMIN: add new members |  |
+| ADMIN: edit members |  |
+| ADMIN: delete members |  |
+| list all bikes in members page |  |
+| MEMBER: add new bike |  |
+| MEMBER: edit bikes |  |
+| MEMBER: delete bike |  |
+| deployment |  |
+|---|---|
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
