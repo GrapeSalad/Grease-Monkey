@@ -13,6 +13,7 @@ import { AdminComponent } from './admin/admin.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { TitleFilterPipe } from './title-filter.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     MembersComponent,
     MemberDetailsComponent,
     BikesComponent,
-    AdminComponent
+    AdminComponent,
+    TitleFilterPipe
   ],
   imports: [
     BrowserModule,

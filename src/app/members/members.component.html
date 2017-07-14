@@ -1,6 +1,17 @@
 <div class="body">
   <h4>Current Members</h4>
-  <div class="panel panel-default" *ngFor="let member of members | async">
+  <div>
+    <p>Sort!</p>
+    <select (change)="onChange($event.target.value)">
+      <option value="All" selected="selected"> All Members </option>
+      <option value="GM"> Grand Manager </option>
+      <option value="BM"> Baby Manager </option>
+      <option value="MM"> MicroManager </option>
+      <option value="WE"> Wise Elder </option>
+      <option value="FM"> Fresh Meat </option>
+    </select>
+  </div>
+  <div class="panel panel-default" *ngFor="let member of members | async | titleFilter:filterBySelector">
     <div class="panel-body">
       <p (click)="goToDetailPage(member)" class="clickable">{{member.name}} | {{member.title}}</p>
     </div>
