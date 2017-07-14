@@ -1,10 +1,11 @@
-# Messy Motorcycle Maintenance
+# Grease-Monkey
+#### The Messy Motorcycle Maintenance Members Only Club Official Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project was built using [Angular CLI](https://github.com/angular/angular-cli), [Angular 2](https://angular.io/), [Typescript](https://www.typescriptlang.org/), [Firebase](https://firebase.google.com/), [Bower](https://bower.io/), [NPM](https://www.npmjs.com/) and Bootstrap for an Epicodus Solo Project 7/14/17.
 
-## Specs
+## Component Checklist
 
-| Spec | Completed? |
+| Component | Completed? |
 |---|---|
 | home page | X |
 | about page | X |
@@ -25,6 +26,32 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Wishlist
 
 + Show all bikes in member detail page
+
+## Project Build
+Download from the [repo](https://github.com/GrapeSalad/Grease-Monkey.git)
+Run `ng -v` to ensure than your Angular is version 4.
+
+| If Not Run One of these Commands |
+| --- |
+| For Windows |
+|`npm install @angular/common@next @angular/compiler@next @angular/compiler-cli@next @angular/core@next @angular/forms@next @angular/http@next @angular/platform-browser@next @angular/platform-browser-dynamic@next @angular/platform-server@next @angular/router@next @angular/animations@next --save` |
+| For Linux/Mac |
+|`npm install @angular/{common,compiler,compiler-cli,core,forms,http,platform-browser,platform-browser-dynamic,platform-server,router,animations}@next --save` |
+
+Run `npm install` to install all dependencies with Node Package Manager, then `bower install` to install the styling dependencies.
+
+You will need a [Firebase API](https://firebase.google.com/) key to run this code.
+This key will need to be saved in the src/app/api-keys.ts file following this schema:
+
+`export var masterFirebaseConfig = {` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;`apiKey: "##",` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;`authDomain: "##",` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;`databaseURL: "example.com",` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;`projectId: "##",` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;`storageBucket: "##",` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;`messagingSenderId: "##"` <br>
+`};`
+
 
 ## Development server
 
@@ -50,3 +77,14 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Credits
+
+This project was built and is maintained by [David Wilson](https://github.com/GrapeSalad)
+For any bugs and issues please message me on Github.
+
+#### License
+
+Built using the MIT license.
+
+Copyright (c) 2017 **David Wilson**

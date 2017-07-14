@@ -33,7 +33,6 @@ export class MemberDetailsComponent implements OnInit {
       }
       this.memberToDisplay = new Member(dataLastEmittedFromObserver.title, dataLastEmittedFromObserver.name, this.memberBikes);
     })
-    // this.memberService.getMemberBikes(this.memberId);
   }
 
 }

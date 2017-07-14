@@ -18,10 +18,6 @@ export class MemberService {
     return this.database.object('members/' + memberId);
   }
 
-  // getMemberBikes(memberId: string){
-  //   return this.members.bikes;
-  // }
-
   addMember(newMember: Member){
     this.members.push(newMember);
   }
