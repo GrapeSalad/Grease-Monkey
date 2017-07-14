@@ -1,0 +1,93 @@
+{ "members": [{
+  "title": "Grand Manager",
+  "name": "Chet Manly",
+  "bikes": [{
+    "make": "Yamaha",
+    "model": "XS400",
+    "displacement": "400",
+    "year": "1980"
+    },{
+    "make": "Yamaha",
+    "model": "XS650",
+    "displacement": "650",
+    "year": "1984"
+    }]
+  }, {
+  "title": "Baby Manager",
+  "name": "Brick Thickness",
+  "bikes": [{
+    "make": "Honda",
+    "model": "NightHawk",
+    "displacement": "650",
+    "year": "1986"
+    }]
+  }, {
+  "title": "Micro Manager",
+  "name": "Big McStrongHuge",
+  "bikes": [{
+    "make": "Yamaha",
+    "model": "FZ-09",
+    "displacement": "847",
+    "year": "2016"
+    },{
+    "make": "Yamaha",
+    "model": "FZ8",
+    "displacement": "750",
+    "year": "2012"
+    }]
+  }, {
+  "title": "Micro Manager",
+  "name": "Rick Mantooth",
+  "bikes": [{
+    "make": "Suzuki",
+    "model": "V-Strom",
+    "displacement": "1000",
+    "year": "1980"
+    }]
+  }, {
+  "title": "Wise Elder",
+  "name": "Meat McPaws",
+  "bikes": [{
+    "make": "Yamaha",
+    "model": "V-Star",
+    "displacement": "650",
+    "year": "2006"
+    }]
+  }, {
+  "title": "Wise Elder",
+  "name": "Big McNotasStrong-orHuge",
+  "bikes": [{
+    "make": "Triumph",
+    "model": "Scrambler",
+    "displacement": "650",
+    "year": "2015"
+    }]
+  }, {
+  "title": "Fresh Meat",
+  "name": "The Orc",
+  "bikes": [{
+    "make": "Honda",
+    "model": "CBR 954 RR",
+    "displacement": "1000",
+    "year": "2003"
+    }]
+  }, {
+  "title": "Fresh Meat",
+  "name": "The Newb",
+  "bikes": [{
+    "make": "BMW",
+    "model": "R1150 Rockster",
+    "displacement": "1150",
+    "year": "2004"
+    }]
+  }, {
+  "title": "Fresh Meat",
+  "name": "Mr. Fontaine",
+  "bikes": [{
+    "make": "Kawasaki",
+    "model": "Vulcan",
+    "displacement": "750",
+    "year": "1994"
+    }]
+  }]
+}
