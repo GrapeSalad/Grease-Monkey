@@ -1,0 +1,17 @@
+{
+  "name": "messy-motorcycle-maintenance",
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.",
+  "main": "karma.conf.js",
+  "authors": [
+    "David Wilson"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
