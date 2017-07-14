@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 | home page | X |
 | about page | X |
 | list members | X |
-| click member to see details |  |
+| click member to see details | X |
 | persistent data | X |
 | filter members |  |
 | ADMIN: add new members |  |
