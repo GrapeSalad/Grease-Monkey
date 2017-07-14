@@ -15,5 +15,9 @@
     <div class="panel-body">
       <p (click)="goToDetailPage(member)" class="clickable">{{member.name}} | {{member.title}}</p>
     </div>
+    <div *ngIf="currentRoute === '/admin'">
+      <hr>
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
   </div>
 </div>

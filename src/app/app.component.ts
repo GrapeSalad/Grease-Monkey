@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Grease Monkey';
-  header = 'Home of the Messiest Motorcycle Maintenance Masters, by membership-only';
+  header = 'Home of the Messiest Motorcycle Maintenance Masters';
+  credit = 'Moderated by magnanimous members';
 }

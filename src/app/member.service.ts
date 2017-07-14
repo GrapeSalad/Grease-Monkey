@@ -22,4 +22,19 @@ export class MemberService {
   //   return this.members.bikes;
   // }
 
+  addMember(newMember: Member){
+    this.members.push(newMember);
+  }
+
+  updateMember(localUpdatedMember){
+    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+    memberEntryInFirebase.update({title: localUpdatedMember.title,
+                                name: localUpdatedMember.name});
+  }
+
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
+
 }

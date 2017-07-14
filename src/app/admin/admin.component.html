@@ -1,3 +1,32 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Member to Inventory</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Member Title:</label>
+        <br>
+        <select #newTitle>
+          <option> Grand Manager </option>
+          <option> Baby Manager </option>
+          <option> MicroManager </option>
+          <option> Wise Elder </option>
+          <option> Fresh Meat </option>
+        </select>
+      </div>
+
+      <div>
+        <label>Member Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <button (click)="submitForm(newTitle.value, newName.value); newName.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-members></app-members>
+</div>

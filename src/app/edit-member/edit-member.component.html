@@ -1,0 +1,15 @@
+<button (click)="editThisMember()" *ngIf="editMemberButton">EDIT</button>
+<div *ngIf="editMemberForm" class="container">
+  <h4>Edit Member</h4>
+
+  <label>New Member Title:</label>
+  <input [(ngModel)]="selectedMember.title">
+  <br>
+
+  <label>New Member Name:</label>
+  <input [(ngModel)]="selectedMember.name">
+
+  <button (click)="beginUpdatingMember(selectedMember)">Update</button>
+  <button (click)="beginDeletingMember(selectedMember)">Delete</button>
+  <button (click)="finishEditingMember()">DONE</button>
+</div>
