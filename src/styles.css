@@ -62,3 +62,14 @@ h3 {
   width: 300px;
   margin: 0 auto 20px;
 }
+
+.oilDrip {
+  height: 68px;
+  width: inherit;
+  background: url("assets/img/dripBanner.png") repeat-x;
+  float: left;
+  clear: all;
+  position: relative;
+  top: 68px;
+  left: -16px;
+}
