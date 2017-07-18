@@ -15,6 +15,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class MemberDetailsComponent implements OnInit {
   memberId: string;
   memberToDisplay;
+  // memberBikes displays appropriately thanks to the combined efforts of Alyssa Moody and Joshua Fairchild (links in the readme)
   memberBikes: Bike[] = [];
   constructor(private route: ActivatedRoute, private location: Location, private memberService: MemberService) { }
 
