@@ -2,11 +2,11 @@
 <p>{{memberToDisplay?.name}}</p>
 <div class="bikes">
   <p>Bikes:</p>
-  <ol>
-    <li>{{memberToDisplay?.bikes.make}} | {{memberToDisplay?.bikes.model}}
+  <ol *ngFor="let bike of memberBikes">
+    <li>{{bike.make}} | {{bike.model}}
       <ul>
-        <li>Engine: {{memberToDisplay?.bikes.displacement}}</li>
-        <li>Year: {{memberToDisplay?.bikes.year}}</li>
+        <li>Engine: {{bike.displacement}}</li>
+        <li>Year: {{bike.year}}</li>
       </ul>
     </li>
   </ol>

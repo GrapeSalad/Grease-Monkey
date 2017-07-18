@@ -15,7 +15,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class MemberDetailsComponent implements OnInit {
   memberId: string;
   memberToDisplay;
-  memberBikes;
+  memberBikes: Bike[] = [];
   constructor(private route: ActivatedRoute, private location: Location, private memberService: MemberService) { }
 
   ngOnInit() {
@@ -25,13 +25,14 @@ export class MemberDetailsComponent implements OnInit {
     this.memberService.getMemberById(this.memberId).subscribe(dataLastEmittedFromObserver => {
       if(dataLastEmittedFromObserver.bikes.length > 1){
         for(var i=0; i<= (dataLastEmittedFromObserver.bikes.length-1); i++){
-          this.memberBikes = new Bike(dataLastEmittedFromObserver.bikes[i].make, dataLastEmittedFromObserver.bikes[i].model, dataLastEmittedFromObserver.bikes[i].displacement, dataLastEmittedFromObserver.bikes[i].year);
+          this.memberBikes.push(new Bike(dataLastEmittedFromObserver.bikes[i].make, dataLastEmittedFromObserver.bikes[i].model, dataLastEmittedFromObserver.bikes[i].displacement, dataLastEmittedFromObserver.bikes[i].year));
+          console.log(this.memberBikes);
         }
       }
       else{
-        this.memberBikes = new Bike(dataLastEmittedFromObserver.bikes[0].make, dataLastEmittedFromObserver.bikes[0].model, dataLastEmittedFromObserver.bikes[0].displacement, dataLastEmittedFromObserver.bikes[0].year);
+        this.memberBikes.push(new Bike(dataLastEmittedFromObserver.bikes[0].make, dataLastEmittedFromObserver.bikes[0].model, dataLastEmittedFromObserver.bikes[0].displacement, dataLastEmittedFromObserver.bikes[0].year));
       }
-      this.memberToDisplay = new Member(dataLastEmittedFromObserver.title, dataLastEmittedFromObserver.name, this.memberBikes);
+      this.memberToDisplay = new Member(dataLastEmittedFromObserver.title, dataLastEmittedFromObserver.name, this.memberBikes[0]);
     })
   }
 

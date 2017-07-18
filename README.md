@@ -25,7 +25,7 @@ This project was built using [Angular CLI](https://github.com/angular/angular-cl
 
 ## Wishlist
 
-+ Show all bikes in member detail page
++ Show all bikes in member detail page (Completed thanks to [Joshua Fairchild](https://github.com/joshuafairchild1))
 
 ## Project Build
 Download from the [repo](https://github.com/GrapeSalad/Grease-Monkey.git)
